@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+#heading {
+    font-size: 175%;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.box {
+    border: 1px solid black;
+    background-color: rgb(138, 148, 158);
+    width: 30.9%;
+    height: 420px;
+    float: left;
+    margin-left: 1.8%;
+}
+
+.title {
+    border: 1px solid black;
+    font-size: 125%;
+    text-align: center;
+    width: 40%;
+    display: block;
+    position: relative;
+    float: right;
+    margin-left: 100em;
+    margin-bottom: 10px;
+}
+
+#t1 {
+    background-color: chocolate;
+    color: white;
+}
+
+#t2 {
+    background-color: brown;
+    color: white;
+}
+
+#t3 {
+    background-color: red;
+    color: white;
+}
+
+.content {
+    text-align: justify;
+    padding: 15px;
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 767px) {
+    body {
+        height: 200vh;
+    }
+
+    #b1, #b2, #b3 {
+        width: 96.35%;
+        height: 380px;
+        margin-top: 1.8%;
+        overflow: scroll;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        height: 150vh;
+    }
+
+    #b1, #b2 {
+        width: 47.3%;
+        height: 450px;
+    }
+
+    #b3 {
+        width: 96.35%;
+        margin-top: 1.8%;
+    }
+
+    #t3 {
+        width: 20%;
+    }
+}
